@@ -11,3 +11,32 @@
  *= require_self
  *= require_tree .
  */
+
+.topic
+{
+  background :#FAFAFA;
+  margin-bottom: 20px;
+}
+
+.title_and_author, .reply
+{
+  padding: 5px 10px;
+  overflow-y:auto;
+  border-bottom: 1px solid #DDD;
+}
+
+.title_and_author
+{
+  background: #DCF4F7;
+}
+
+.reply_form
+{
+  padding: 10px;
+  overflow-y:auto;
+}
+.reply_form input
+{
+  float: right;
+}
+

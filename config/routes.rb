@@ -1,4 +1,8 @@
 Forumx::Application.routes.draw do
+  resources :topics
+  resources :replies
+
+  root :to => "topics#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
