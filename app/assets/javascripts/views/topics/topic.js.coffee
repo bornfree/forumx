@@ -1,17 +1,19 @@
 class Forumx.Views.Topic extends Backbone.View
 
   template: JST['topics/topic']
-
+  
   events:
     'submit .new_reply': 'createReply'
 
   initialize: ->
     @replies = new Forumx.Collections.Replies(id: @model.get('_id'))
-    @replies.fetch()
     @replies.on('reset', @render, this)
-    @replies.on('add', @render, this)
 
-  render: ->
+  show: ->
+    @replies.fetch()
+    this
+
+  render: =>
     $(@el).html(@template(topic : @model))
     replies_view = new Forumx.Views.RepliesIndex(collection : @replies)
     @$(".replies_holder").append(replies_view.render().el)

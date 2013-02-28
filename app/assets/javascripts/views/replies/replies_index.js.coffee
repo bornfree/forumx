@@ -11,7 +11,7 @@ class Forumx.Views.RepliesIndex extends Backbone.View
     @collection.each(@addReply)
     this
 
-  addReply: (reply) ->
+  addReply: (reply) =>
     reply_view = new Forumx.Views.Reply(model: reply)
     @$(".replies").append(reply_view.render().el)
 

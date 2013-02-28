@@ -17,6 +17,11 @@
   background :#FAFAFA;
   margin-bottom: 20px;
 }
+.topic h5
+{
+  padding: 10px;
+
+}
 
 .replies_holder
 {
