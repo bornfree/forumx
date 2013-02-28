@@ -1,0 +1,4 @@
+<form class="new_reply">
+  <input type="text" class="new_reply_message" name="message" placeholder="Reply" required/>
+  <input type="text" class="new_reply_author" name="author" placeholder="Author"/>
+</form>

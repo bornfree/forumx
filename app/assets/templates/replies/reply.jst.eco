@@ -1,0 +1,3 @@
+<div class="reply">
+<p> <%= @reply.get('message')%> - <%= @reply.get('author')%> </p>
+</div>
