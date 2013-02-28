@@ -18,25 +18,16 @@
   margin-bottom: 20px;
 }
 
-.title_and_author, .reply
+.replies_holder
 {
-  padding: 5px 10px;
+  padding: 10px;
+}
+
+.reply
+{
+  padding:10px;
   overflow-y:auto;
   border-bottom: 1px solid #DDD;
 }
 
-.title_and_author
-{
-  background: #DCF4F7;
-}
-
-.reply_form
-{
-  padding: 10px;
-  overflow-y:auto;
-}
-.reply_form input
-{
-  float: right;
-}
 
