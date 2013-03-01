@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require underscore
 //= require backbone
+//= require handlebars.runtime
 //= require forumx
 //= require_tree ../templates
 //= require_tree ./models

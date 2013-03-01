@@ -14,7 +14,7 @@ class Forumx.Views.Topic extends Backbone.View
     this
 
   render: =>
-    $(@el).html(@template(topic : @model))
+    $(@el).html(@template(topic : @model.toJSON()))
     replies_view = new Forumx.Views.RepliesIndex(collection : @replies)
     @$(".replies_holder").append(replies_view.render().el)
     this

@@ -1,9 +1,10 @@
 <div class="topic span3">
-<h5> <%= @topic.get('title')%> - <%= @topic.get('author')%> </h5>
+<h5> {{topic/title}} - {{topic/author}} </h5>
+
 <div class="replies_holder">
 </div>
 <form class="new_reply">
-  <input type="hidden" name="topic_id" class="reply_topic_id"  value="<%= @topic.get('_id')%>">
+  <input type="hidden" name="topic_id" class="reply_topic_id"  value={{topic/_id}}>
   <input type="text" name="title" class="new_reply_message" placeholder="Reply text" required />
   <input type="text" name="author" class="new_reply_author" placeholder="Name(optional)"/>
   <input type="submit" value="Post" class="btn btn-success"/>

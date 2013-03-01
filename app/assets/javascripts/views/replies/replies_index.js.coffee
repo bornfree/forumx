@@ -12,7 +12,7 @@ class Forumx.Views.RepliesIndex extends Backbone.View
     this
 
   addReply: (reply) =>
-    reply_view = new Forumx.Views.Reply(model: reply)
+    reply_view = new Forumx.Views.Reply(model: reply.toJSON())
     @$(".replies").append(reply_view.render().el)
 
 
